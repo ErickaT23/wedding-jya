@@ -1,0 +1,550 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Nunito', sans-serif;
+    text-align: center; /* Centra el texto de todo el cuerpo */
+    display: flex;
+    flex-direction: column; /* Asegura una disposición vertical */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    min-height: 100vh; /* Altura mínima de 100% del viewport */
+    background-image: url(/Imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.contenedor-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+.contenedor-central p{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 500;
+    color: #795e14;
+}
+.icono-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #90825bdb; /* Sustituye con tu color */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto sombra para 3D */
+    cursor: pointer;
+}
+.card-inicial h1{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #4096A6;
+    margin: 0px 0px 0px 0px;
+}
+.card-inicial h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 110px;
+    margin: 0px 0px 0px 0px;
+    color: #795e14;
+}
+.card-inicial h3{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 0px;
+    font-size: 45px;
+    font-weight: 500;
+    color: #4096A6;
+    margin-top: 20px;
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
+.pregunta h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0px 0px 0px 0px;
+    color: #4096A6;
+}
+/*Contador*/
+.contador-principal {
+    display: flex;
+    justify-content: center; /* Centra el contenido verticalmente */
+    background-color: transparent; /* Fondo de la caja del contador */
+    padding: 10px;
+    border-radius: none;
+    box-shadow: none;
+}
+.contador {
+    display: flex;
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 30px;
+}
+.unidad {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+.numero {
+    display: block;
+    font-size: 40px; /* Tamaño de los números */
+    color: #795e14;;
+    background-color: #ffffff9b;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.etiqueta {
+    color: #795e14;
+    font-size: 20px;
+    text-transform: none; /* Texto en mayúsculas */
+    font-weight: 600;
+}
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 0px; /* Espacio entre cards */
+    justify-content: center; /* Centra las cards en el contenedor */
+    align-items: center; /* Alineación vertical */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado horizontal */
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0; /* Asegura un poco de espacio entre cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.card:hover {
+    transform: perspective(1000px) scale(1.05) rotateY(0deg) rotateX(0deg); /* Efecto de elevación en hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada para efecto de profundidad */
+}
+#card1{
+    width: 480px;
+    height: 80px;
+    padding: 15;
+    border: solid 5px white;
+    margin-left: 70px;
+    background-color: #bdd9dea9;
+    z-index: 1;
+    margin-top: -240px;
+}
+#card1 p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #795e14;
+    font-weight: 500;
+}
+#card2{
+        width: 324px;
+        height: 486px;
+        padding: 0;
+        border: solid 5px white;
+        z-index: 2;
+        margin-left: -10px;
+}
+#card2 img{
+    width: 100%;
+    transition: filter 0.3s ease;
+}
+#card2:hover img{
+    filter: brightness(60%); /* Aumenta el brillo al 120% cuando el cursor está encima */
+}
+#card3{
+    width: 324px;
+    height: 380px;
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    border: solid 5px white;
+    margin-left: 120px;
+    margin-top: -20px;
+    background-color: #bdd9dea9;
+    margin-top: -600px;
+}
+#card3 img{
+    width: 40%;
+    height: auto;
+    margin: -10px;
+}
+#card3 h1{
+    font-size: 45px;
+    margin-top: -30px;
+    color: #795e14;
+    text-shadow: 2px 2px 4px white; /* Efecto de sombra */
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+#card3 h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #4096A6;
+    font-weight: 700;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+#card3 h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #4096A6;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card3 h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #4096A6;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card3 h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #4096A6;
+    font-weight: 300;
+}
+#card3 .boton{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #887235;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+#card4{
+    width: 324px;
+    height: 486px;
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    padding: 0;
+    border: solid 5px white;
+    background-color: #bdd9dea9;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+#card4 img{
+    width: 40%;
+    height: auto;
+    margin: -10px;
+}
+#card4 h1{
+    font-size: 45px;
+    margin-top: -30px;
+    color: #795e14;
+    text-shadow: 2px 2px 4px white; /* Efecto de sombra */
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+#card4 h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #4096A6;
+    font-weight: 700;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+#card4 h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #4096A6;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card4 h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #4096A6;
+    font-weight: 550;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card4 .boton{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #887235;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+#card5{
+    width: 529px;
+    height: 350px;
+    padding: 0;
+    border: solid 5px white;
+    margin-top: -600px;
+    margin-left: 40px;
+}
+#card5 img{
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+#card6{
+    width: 429px;
+    height: 285px;
+    padding: 0;
+    border: solid 5px white;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+#card6 img{
+    width: 100%;
+    height: auto;
+}
+#card7{
+    width: 324px;
+    height: 380px;
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    border: solid 5px white;
+    margin-left: 120px;
+    margin-top: -20px;
+    background-color: #bdd9dea9;
+    margin-top: -560px;
+}
+#card7 img{
+    width: 40%;
+    height: auto;
+    margin: -10px;
+}
+#card7 h1{
+    font-size: 45px;
+    color: #795e14;
+    text-shadow: 2px 2px 4px white; /* Efecto de sombra */
+    font-family: 'Dancing Script', cursive;
+    margin-top: -30px;
+}
+#card7 h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #4096A6;
+    font-weight: 700;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+#card7 h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #4096A6;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card7 .boton{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #887235;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+#card8{
+    width: 324px;
+    height: 486px;
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    padding: 0;
+    border: solid 5px white;
+    background-color: #bdd9dea9;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+#card8 img{
+    width: 40%;
+    height: auto;
+    margin: -10px;
+}
+#card8 h1{
+    font-size: 45px;
+    margin-top: -30px;
+    color: #795e14;
+    text-shadow: 2px 2px 4px white; /* Efecto de sombra */
+    font-family: 'Dancing Script', cursive;
+}
+#card8 h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #4096A6;
+    font-weight: 700;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+#card8 h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #4096A6;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card8 h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #4096A6;
+    font-weight: 550;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card8 .boton{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #887235;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+#card9{
+    width: 529px;
+    height: 350px;
+    padding: 0;
+    border: solid 5px white;
+    margin-top: -300px;
+    margin-left: 40px;
+}
+#card9 img{
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+.contenedor-cards-final {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Dos columnas */
+    gap: 10px; /* Espacio entre cards */
+    justify-content: center; /* Centra las cards en el contenedor */
+    align-items: center; /* Alineación vertical */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado horizontal */
+}
+#card10{
+    width: 650px;
+    height: 400px;
+    padding: 0;
+    border: solid 5px white;
+    margin-top: 20px;
+    background-color: #bdd9dea9;
+    display: inline;
+}
+#card10 img{
+    width: 25%;
+    height: auto;
+    margin: -10px;
+}
+#card10 h1{
+    font-size: 45px;
+    margin-top: 10px;
+    color: #795e14;
+    text-shadow: 2px 2px 4px white; /* Efecto de sombra */
+    font-family: 'Dancing Script', cursive;
+}
+#card10 h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #4096A6;
+    font-weight: 700;
+    margin-top: -30px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+#card10 .boton{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #887235;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+#card11{
+    width: 650px;
+    height: 435px;
+    padding: 0;
+    border: solid 5px white;
+    margin-top: 20px;
+}
+#card11 img{
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+.contenedor-cards-final h3{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #4096A6;
+    margin: 0px 0px 0px 0px;
+}
+.contenedor-cards-final h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 110px;
+    margin: 0px 0px 0px 0px;
+    color: #795e14;
+}
+.contenedor-cards-final h5{
+    font-family: 'Nunito', sans-serif;
+}
+/* Para dispositivos más pequeños */
+@media (max-width: 767px) {
+    .contenedor-cards, .contenedor-cards-final {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Asegura que las cards ocupen el ancho disponible */
+    .card {
+        width: 90%; /* Ajusta al ancho de la pantalla con un pequeño margen */
+        margin: 0; /* Espacio entre cards */
+    }
+    #card1{
+        width: 400px;
+        height: 100px;
+        padding: 15;
+        margin: 0px;
+    }
+    #card2{
+    padding: 0;
+    z-index: 0;
+    margin: 0px;
+    }
+
+}

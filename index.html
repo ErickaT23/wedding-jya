@@ -5,10 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan & Renata</title>
     <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-
+        <div class="contenedor-central">
+            <p class="frase-play">¡Dale play a nuestra canción!</p>
+            <div id="playPauseButton" class="icono-contenedor">
+                <div id="playPauseButton" class="icono-contenedor">
+                    <i id="iconoPlayPause" class="fas fa-play"></i>
+                </div>
+                    <audio id="audioPlayer" src="/musica/videoplayback.weba"></audio>
+            </div>            
+        </div>
+        <div class="card-inicial">
+            <h1>¡Nos casamos!</h1>
+            <h2>Juan y Renata</h2>
+            <h3>11 . Mayo . 2024</h3>
+        </div>
     </header>
+    <div class="pregunta">
+        <h1>¿Cuánto falta?</h1>
+    </div>
+    <div class="contador-principal">
+        <div id="contador" class="contador">
+            <div class="unidad">
+                <span id="dias" class="numero"></span>
+                <span class="etiqueta">Días</span>
+            </div>
+            <div class="unidad">
+                <span id="horas" class="numero"></span>
+                <span class="etiqueta">Horas</span>
+            </div>
+            <div class="unidad">
+                <span id="minutos" class="numero"></span>
+                <span class="etiqueta">Minutos</span>
+            </div>
+            <div class="unidad">
+                <span id="segundos" class="numero"></span>
+                <span class="etiqueta">Segundos</span>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-cards">
+        <div class="card" id="card1">
+            <p>Te quiero libre, y me quiero libre contigo</p>
+        </div>
+        <div class="card" id="card2">
+            <img src="/Imagenes/V1.jpg" alt="pareja-vertical">
+        </div>
+        <div class="card" id="card3">
+            <img src="/Icons/9.svg" alt="icono-ceremonia"></img>
+             <h1>Ceremonia</h1>
+             <h2>Hotel Museo Casa Santo Domingo</h2>
+             <h3>12:00 Hrs</h3>
+             <h4>Antigua Guatemala</h4>
+             <h5>A continuación de la ceremonia damos inicio a nuestra Fiesta</h5>
+             <a href="https://maps.app.goo.gl/UMuNBeqvz8bfKG489" target="_blank" class="boton">Cómo llegar</a>
+        </div>
+        <div class="card" id="card4">
+            <img src="/Icons/15.svg" alt="icono-filtro">
+            <h1>Filtro para tu historia</h1>
+            <h2>Usa nuestros filtros para Instagram, etiquetanos para que estos recuerdos sean eternos</h2>
+            <h3>¡No olvides usar nuestros hashtags!</h3>
+            <h4>#noscasamosjuanyrenata #juanyrenata</h4>
+            <a href="https://www.instagram.com/ar/251150787453809" target="_blank" class="boton">Toma una Historia</a>
+        </div>
+        <div class="card" id="card5">
+            <img src="Imagenes/H1.jpg" alt="pareja-de-espaldas">
+        </div>
+        <div class="card" id="card6">
+            <img src="/Imagenes/H3.jpg" alt="foto-pareja-de-frente">
+        </div>
+        <div class="card" id="card7">
+            <img src="/Icons/12.svg" alt="icono-ceremonia"></img>
+             <h1>Dress Code</h1>
+             <h2>Elegante y queda reservado el color celeste & café</h2>
+             <h3>Te dejamos unas sugerencias aquí en nuestro tablero de Pinterest</h3>
+             <a href="https://www.pinterest.com/twodesignt/bodas/valentina-alejandro/" target="_blank" class="boton">Ver</a>
+        </div>
+        <div class="card" id="card8">
+            <img src="/Icons/13.svg" alt="">
+            <h1>Lluvia de Sobres</h1>
+            <h2>Lo que más queremos es compartir contigo este gran día, pero si deseas regalarnos algo habrá un cofre en la entrada donde puedes dejarnos tu sobre con efectivo.</h2>
+            <h3>¡Gracias por compartir nuestra felicidad!</h3>
+        </div>
+        <div class="card" id="card9">
+            <img src="/Imagenes/H2.jpg" alt="pareja-de-frente-viendose">
+        </div>
+    </div>
+
+    <div class="contenedor-cards-final">
+        <div class="card" id="card10">
+            <img src="/Icons/16.svg" alt="icono-confirmación">
+            <h1>RSVP</h1>
+            <h2>Para nosotros es muy importante que confirmes tu asistencia antes del 20 de Abril, o bien indicarnos sino podras acompañarnos. Por favor, comentanos si tienes alguna restricción alimentaria (vegano, celiaco, diabético, etc.)</h2>
+            <a href="https://wa.me/message/IQSYL2JZU65UL1" target="_blank" class="boton">Confirmar asistencia</a>
+        </div>
+        <div class="card" id="card11">
+            <img src="/Imagenes/H4.jpg" alt="pareja-viendose-de-lado">
+        </div>
+        <h3>¡Te esperamos!</h3>
+        <h4>Juan y Renata</h4>
+        <h5>Hecho por @thetwodesign</h5>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/8435ad2454.js" crossorigin="anonymous"></script>
+    <script src="js/contador.js"></script>
+    <script src="/JS/play.js"></script>
+    <script src="/JS/animacion.js"></script>
 </body>
 </html>
