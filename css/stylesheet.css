@@ -558,7 +558,7 @@ header {
     margin: 0px 0px 0px 0px;
   }
   #card1{
-    width: 388px;
+    width: 348px;
     height: 80px;
     padding: 5px;
     align-items: center;
@@ -584,14 +584,14 @@ header {
     order: 4;
   }
   #card5{
-    width: 388px;
-    height: 258px;
+    width: 348px;
+    height: 230px;
     padding: 0;
     order: 3;
   }
   #card6{
-    width: 388px;
-    height: 258px;
+    width: 348px;
+    height: 230px;
     padding: 0;
     order: 6;
   }
@@ -608,8 +608,8 @@ header {
     order: 9;
   }
   #card9{
-    width: 388px;
-    height: 258px;
+    width: 348px;
+    height: 230px;
     padding: 0;
     order: 8;
   }
@@ -620,16 +620,16 @@ header {
     order: 11;
   }
   #card11{
-    width: 388px;
-    height: 258px;
+    width: 348px;
+    height: 230px;
     padding: 0;
     order: 10;
   }
   #card12{
     display: block;
     border: solid 5px white;
-    width: 388px;
-    height: 258px;
+    width: 348px;
+    height: 230px;
     padding: 0;
     order: 12;
   }
