@@ -679,4 +679,7 @@ header {
 .contenedor-central p{
     font-size: 15px;
 }
+.pregunta h1{
+    font-size: 40px;
+}
 }
