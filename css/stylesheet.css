@@ -535,9 +535,6 @@ header {
 }
 /* Para dispositivos más pequeños */
 @media (max-width: 767px) {
-    body{
-        margin-left: 20px;
-    }
 .contenedor-cards, .contenedor-cards-final{
     display: flex;
     flex-direction: column;
@@ -567,7 +564,7 @@ header {
   #card1, #card2, #card3, #card4, #card5,#card6,#card7, #card8,
   #card9, #card10, #card12{
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
   }
@@ -638,7 +635,7 @@ header {
     height: 230px;
     padding: 0;
     order: 10;
-    margin-left: 0px;
+    margin-left: 00px;
     margin-right: 0px;
   }
   #card12{
