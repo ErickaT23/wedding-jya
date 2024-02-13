@@ -506,6 +506,9 @@ header {
     height: auto;
     transition: filter 0.3s ease;
 }
+#card12{
+    display: none;
+}
 .contenedor-cards-final h3{
     font-family: 'Dancing Script', cursive;
     letter-spacing: 2px;
@@ -525,24 +528,120 @@ header {
 }
 /* Para dispositivos más pequeños */
 @media (max-width: 767px) {
-    .contenedor-cards, .contenedor-cards-final {
-        display: grid;
-        align-items: center;
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr); /* 3 columnas */
-        grid-gap: 10px; /* Espaciado entre cards */
-    }
-    .card {
-        width: 95%; 
-        margin: auto; 
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    
-    .card-visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
+.contenedor-cards, .contenedor-cards-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    gap: 15px;
+}
+.card {
+    width: 90%;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .card h1, .card h2, .card h3, .card h4, .card h5, .card p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #card1, #card2, #card3, #card4, #card5,#card6,#card7, #card8,
+  #card9, #card10, #card11{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #card1{
+    width: 388px;
+    height: 80px;
+    padding: 5px;
+    align-items: center;
+    z-index: none;
+    order: 0;
+  }
+  #card2{
+    width: 324px;
+    height: 486px;
+    z-index: none;
+    order: 1;
+  }
+  #card3{
+    width: 324px;
+    height: 486px;
+    padding: 0;
+    order: 2;
+  }
+  #card4{
+    width: 324px;
+    height: 486px;
+    padding: 0;
+    order: 4;
+  }
+  #card5{
+    width: 388px;
+    height: 258px;
+    padding: 0;
+    order: 3;
+  }
+  #card6{
+    width: 388px;
+    height: 258px;
+    padding: 0;
+    order: 6;
+  }
+  #card7{
+    width: 324px;
+    height: 486px;
+    padding: 0;
+    order: 7;
+  }
+  #card8{
+    width: 324px;
+    height: 486px;
+    padding: 0;
+    order: 9;
+  }
+  #card9{
+    width: 388px;
+    height: 258px;
+    padding: 0;
+    order: 8;
+  }
+  #card10{
+    width: 324px;
+    height: 486px;
+    padding: 0;
+    order: 11;
+  }
+  #card11{
+    width: 388px;
+    height: 258px;
+    padding: 0;
+    order: 10;
+  }
+  #card12{
+    display: block;
+    border: solid 5px white;
+    width: 388px;
+    height: 258px;
+    padding: 0;
+    order: 12;
+  }
+  .contenedor-cards-final h3 {
+    order: 13;
+  }
+  .contenedor-cards-final h4{
+    order: 14;
+  }
+  .contenedor-cards-final h5{
+    order: 15;
+  }
 }
