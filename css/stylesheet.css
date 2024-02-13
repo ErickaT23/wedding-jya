@@ -545,12 +545,12 @@ header {
     align-items: center;
     height: 100%;
     text-align: center;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
     padding: 0;
     gap: 15px;
 }
 .card {
-    width: 90%;
+    width: 100%;
     margin: auto;
     opacity: 0;
     transform: translateY(20px);
@@ -567,7 +567,7 @@ header {
   #card1, #card2, #card3, #card4, #card5,#card6,#card7, #card8,
   #card9, #card10, #card12{
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: 20px;
     margin-right: 0px;
     margin-top: 0px;
   }
