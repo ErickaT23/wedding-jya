@@ -220,7 +220,7 @@ header {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     color: #4096A6;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -228,7 +228,7 @@ header {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     color: #4096A6;
-    font-weight: 300;
+    font-weight: 600;
 }
 #card3 .boton{
     display: inline-block;
@@ -287,7 +287,7 @@ header {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: #4096A6;
-    font-weight: 550;
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -667,4 +667,13 @@ header {
   .contenedor-cards-final h5{
     order: 15;
   }
+  .card-inicial h1{
+    font-size: 40px;
+}
+.card-inicial h2{
+    font-size: 60px;
+}
+.card-inicial h3{
+    font-size: 25px;
+}
 }
