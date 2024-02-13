@@ -538,6 +538,14 @@ header {
     body{
         margin: 0px 0px 0px 0px;
     }
+    .contador-principal {
+        margin-left: 10px;
+    }
+    .contador {
+        display: flex;
+        align-items: center; /* Centra el contenido horizontalmente */
+        margin-bottom: 30px;
+    }
 .contenedor-cards, .contenedor-cards-final{
     display: flex;
     flex-direction: column;
