@@ -632,6 +632,14 @@ header {
     padding: 0;
     order: 11;
   }
+  #card10 img{
+    width: 40%;
+    height: auto;
+    margin: -10px;
+}
+#card10 .boton{
+    margin-top: 20px;
+}
   #card11{
     width: 348px;
     height: 230px;
