@@ -13,6 +13,7 @@ body {
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    margin: 0px 0px 0px 0px;
 }
 .contenedor-central {
     display: flex;
@@ -21,6 +22,7 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
+    margin: 0px 0px 0px 0px;
 }
 .contenedor-central p{
     font-family: 'Nunito', sans-serif;
@@ -28,6 +30,7 @@ body {
     font-size: 30px;
     font-weight: 500;
     color: #795e14;
+    margin: 0px 0px 0px 0px;
 }
 .icono-contenedor {
     display: flex;
@@ -39,6 +42,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto sombra para 3D */
     cursor: pointer;
+    margin: 0px 0px 0px 0px;
 }
 .card-inicial h1{
     font-family: 'Dancing Script', cursive;
@@ -61,6 +65,8 @@ body {
     font-weight: 500;
     color: #4096A6;
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 header {
     text-align: center;
@@ -81,6 +87,7 @@ header {
     padding: 10px;
     border-radius: none;
     box-shadow: none;
+    margin: 0px 0px 0px 0px;
 }
 .contador {
     display: flex;
@@ -528,14 +535,18 @@ header {
 }
 /* Para dispositivos más pequeños */
 @media (max-width: 767px) {
-.contenedor-cards, .contenedor-cards-final {
+    body{
+        margin: 0px 0px 0px 0px;
+    }
+.contenedor-cards, .contenedor-cards-final{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     text-align: center;
-    margin: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
     gap: 15px;
 }
 .card {
@@ -554,8 +565,11 @@ header {
     line-height: 1.5;
   }
   #card1, #card2, #card3, #card4, #card5,#card6,#card7, #card8,
-  #card9, #card10, #card11, #card12{
-    margin: 0px 0px 0px 0px;
+  #card9, #card10, #card12{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
   }
   #card1{
     width: 348px;
@@ -624,6 +638,8 @@ header {
     height: 230px;
     padding: 0;
     order: 10;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   #card12{
     display: block;
@@ -635,9 +651,11 @@ header {
   }
   .contenedor-cards-final h3 {
     order: 13;
+    font-size: 40px;
   }
   .contenedor-cards-final h4{
     order: 14;
+    font-size: 60px;
   }
   .contenedor-cards-final h5{
     order: 15;
