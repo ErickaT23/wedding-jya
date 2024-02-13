@@ -525,26 +525,7 @@ header {
 }
 /* Para dispositivos más pequeños */
 @media (max-width: 767px) {
-    .contenedor-cards, .contenedor-cards-final {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* Asegura que las cards ocupen el ancho disponible */
-    .card {
-        width: 90%; /* Ajusta al ancho de la pantalla con un pequeño margen */
-        margin: 0; /* Espacio entre cards */
-    }
-    #card1{
-        width: 400px;
-        height: 100px;
-        padding: 15;
-        margin: 0px;
-    }
-    #card2{
-    padding: 0;
-    z-index: 0;
-    margin: 0px;
-    }
-
+   body{
+    scale: 0.8;
+   }
 }
