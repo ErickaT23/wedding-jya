@@ -676,4 +676,7 @@ header {
 .card-inicial h3{
     font-size: 25px;
 }
+.contenedor-central p{
+    font-size: 15px;
+}
 }
