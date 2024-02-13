@@ -565,7 +565,11 @@ header {
   }
   #card1, #card2, #card3, #card4, #card5,#card6,#card7, #card8,
   #card9, #card10, #card12{
-    margin: 0px, 0px, 0px, 0px}
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
   #card1{
     width: 348px;
     height: 80px;
