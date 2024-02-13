@@ -544,7 +544,7 @@ header {
     align-items: center;
     height: 100%;
     text-align: center;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
     padding: 0;
     gap: 15px;
 }
@@ -565,11 +565,7 @@ header {
   }
   #card1, #card2, #card3, #card4, #card5,#card6,#card7, #card8,
   #card9, #card10, #card12{
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-  }
+    margin: 0px, 0px, 0px, 0px}
   #card1{
     width: 348px;
     height: 80px;
@@ -637,7 +633,7 @@ header {
     height: 230px;
     padding: 0;
     order: 10;
-    margin-left: 00px;
+    margin-left: 0px;
     margin-right: 0px;
   }
   #card12{
